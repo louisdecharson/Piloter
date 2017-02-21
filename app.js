@@ -44,7 +44,7 @@ app.use(function (req, res, next) {
 var db;
 
 // Connect to the database before starting the application server.
-// MONGODB_URI = mongodb://localhost:27017/Piloter
+// const url = "mongodb://localhost:27017/Piloter";
 const url = process.env.MONGODB_URI;
 mongodb.MongoClient.connect(url, function (err, database) {
   if (err) {
