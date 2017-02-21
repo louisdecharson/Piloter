@@ -1,0 +1,50 @@
+extends layout_admin
+
+block content
+        h1 Espace administrateur
+        hr
+        h3 Editer
+        form(action='/admin/posts/'+post.slug method='POST' enctype='application/json')
+                div(class='form-group')
+                        label(for='title') Titre
+                        input(type='title' class='form-control' id='title_post' name='title' value=post.title)
+                div(class='form-group')
+                        label(for='Abstract') Résumé
+                        input(type='astract' class='form-control' id='abstract_post' name='abstract' value=post.abstract)
+                div(class='form-group')
+                        label(for='date') Date
+                        input(type='date' class='form-control' id='date' name='date' value=post.date)
+                div(class='form-group')
+                        label(for='slug') Slug
+                        input(type='slug' class='form-control' id='slug' name='slug' value=post.slug)
+                hr
+
+                div(class="editor-toolbar")
+                        a(title="Bold" class="fa fa-bold")         
+                        a(title="Italic" class="fa fa-italic")
+                        a(title="Heading +" class="fa fa-header")
+                        a(title="Heading -" class="fa fa-header")
+                        i(class="separator")
+                        a(title="Quote" class="fa fa-quote-left")
+                        a(title="List" class="fa fa-list-ul")
+                        a(title="Numbered List" class="fa fa-list-ol")
+                        i(class="separator")
+                        a(title="Insert Link" class="fa fa-link")
+                        a(title="Insert Image" class="fa fa-image")
+                        i(class="separator")
+                        a(title="Toggle Preview" class="fa fa-eye" id="preview")
+                        a(title="Toggle Side by Side" class="fa fa-columns" id="sidebyside")         
+                div(class='row')
+                        div(class="col-md-12 col-input" id="col-input")
+                                div(class='form-group')
+                                        textarea(class='form-control' id='input' rows=12 name='content')= post.content
+                        div(class='col-output' id='col-output' style="display:none")
+                                div(id='output')
+                button(type="submit" class="btn btn-primary") Publier le post 
+                div(class='head-space')
+
+block scripts
+        script(src='/js/marked.min.js')
+        script(src='/js/rangyinputs-jquery.js')
+        script(src='/js/calepin.js')
+

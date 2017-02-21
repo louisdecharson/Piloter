@@ -1,0 +1,152 @@
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+
+.separator:not(:first-child){
+    border-right:1px solid #e0e0e0;
+    margin-right: 6px;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    padding: 2%;
+}
+textarea {
+    min-height: 500px;    
+    width:100%;
+    height:100%;
+}
+
+#input {
+    font-family: "menlo", sans-serif !important;
+    font-size:small;
+}
+
+#output {
+    padding: 1%;
+}
+
+/* Toolbar  */
+.fa {
+    margin-right: 5px !important;
+    padding: 2px;
+}
+.fa.active {
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+}
+
+
+/* Output */
+
+#output {
+    font-family :"Helvetica", "Arial";
+    color: black ;
+}
+
+#output p {
+    font-size: medium;
+}
+
+#output a {
+    text-decoration: none;
+    color: black ;
+    border-bottom: solid grey;
+
+}
+
+#output a:hover {
+    text-decoration: none ;
+    background-color: grey ;
+    color: white ;
+    padding: 2px;
+}
+
+
+#output a#results.soon:hover {
+    text-decoration: none ;
+    background-color: white;
+    padding: 0px;
+}
+
+#output h1, h2, h3, h4 {
+    font-weight: bold ;
+    text-decoration: none ;
+}
+
+#output h1 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#output h1 a {
+    border-bottom: none;
+}
+
+
+#output h2 {
+    margin-top: 0px;
+    font-size: 20px
+}
+
+#output h3 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#output h4 {
+    font-size: 14px;
+    font-style:italic;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+
+#output img {
+    padding: 5px;
+}
+
+#output ul {
+    padding-left: 0px;
+}
+
+#output li {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+
+#output figcaption {
+    font-size: 12px;
+}
+
+#output #push {
+    padding-top:20px;
+}
+
+#output th {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#output td {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#output pre {
+    color: #bd4147;
+    background-color: #f7f7f9;
+}

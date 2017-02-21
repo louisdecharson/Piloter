@@ -1,0 +1,128 @@
+body {
+    font-family :"Helvetica", "Arial";
+    color: black ;
+    padding: 3% 3% 3% 3%;
+}
+
+a {
+    text-decoration: none;
+    color: black ;
+
+}
+
+a:hover {
+    text-decoration: none ;
+    background-color: grey ;
+    color: white ;
+}
+
+
+h1, h2, h3, h4 {
+    font-weight: bold ;
+    text-decoration: none ;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+h1 a {
+    border-bottom: none;
+}
+
+
+h2 {
+    margin-top: 0px;
+    font-size: 20px
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 14px;
+    font-style:italic;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+img {
+    padding: 5px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+/* -------------------- */
+
+/* BIO */
+.bio-photo {
+    width: 70%;
+}
+.bio-legend {
+    font-style:italic;
+    font-size:small;
+}
+.site-name{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.head-space{
+    margin-bottom: 60px;
+}
+
+/* HEADER - NAVIGATION */
+.top-navigation ul li {
+    display: inline;
+    padding:0;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+
+/* POSTS */
+.post {
+    margin-bottom:20px;
+}
+a.post-title{
+    font-weight: bold;
+    display:inline;
+    margin-right: 50px;
+}
+.post-abstract {
+    font-style:italic;
+    font-size: small;
+}
+.date{
+    font-size:small;
+    font-weight: bold;
+    font-style:italic;
+    display:inline;
+    float: right;    
+}
+.abstract {
+    font-style:italic;
+    padding-bottom: 15px;
+}
+
+.edit {
+    margin-top: -8px;
+    margin-left: 85px;
+}
+
+
+

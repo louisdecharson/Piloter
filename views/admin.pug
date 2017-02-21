@@ -1,0 +1,16 @@
+extends layout_admin
+
+block content
+        h1 Espace administrateur
+        hr
+        h3 Ecrire un nouveau post
+        a(class="btn btn-primary" href='/admin/new_post' role="button") Ecrire un nouveau post
+        hr
+        h2 Posts récents
+        each post in posts
+            div(class='post')
+                    a(class='btn btn-primary' style='margin-right:10px; margin-top:5px;' role='button' href='/admin/posts/'+post.slug) Editer
+                    a(href='/posts/'+post.slug class='post-title')= post.title
+                    div(class='date')= post.date
+                    div(class='post-abstract edit')= post.abstract
+
