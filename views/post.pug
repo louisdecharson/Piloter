@@ -6,7 +6,7 @@ block content
         div(class='abstract')= post.abstract
         div(class='content' id='content')= post.content
 block scripts
-        script(src='/js/marked.min.js')
+        script(src='/public/js/marked.min.js')
         script.
                 document.getElementById('content').innerHTML = marked($('#content').text())
                 $("blockquote").addClass('blockquote');

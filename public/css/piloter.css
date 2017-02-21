@@ -124,5 +124,10 @@ a.post-title{
     margin-left: 85px;
 }
 
-
-
+.login {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    width: 300px;
+    padding: 20px;
+}
