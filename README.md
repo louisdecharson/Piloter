@@ -1,1 +1,1 @@
-A quick app to use the MEN Stack. 
+A small blog and its platform.
